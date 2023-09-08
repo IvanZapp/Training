@@ -1,0 +1,23 @@
+# Compile an aab with the configuration provided and upload to Google Play
+name: CI - Build-Flavor-Aab
+
+on:
+  workflow_dispatch:
+    inputs:
+      flavorId:
+        type: choice
+        description: Seleccione configuracion para buildear.
+        required: true
+        options:
+          - production
+jobs:
+  build:
+    runs-on: [self-hosted, Linux]
+    container: registry.myapi.es/android-ci
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
+      - name: Building Aab ${{ github.event.inputs.flavorId }}
+        run: fastlane buildAab id:${{ github.event.inputs.flavorId }}
+

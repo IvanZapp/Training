@@ -1,0 +1,135 @@
+{
+  "project_info": {
+    "project_number": "502008612382",
+    "firebase_url": "https://zappchatandroid.firebaseio.com",
+    "project_id": "zappchatandroid",
+    "storage_bucket": "zappchatandroid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:502008612382:android:ff3cbe13c089e5e920100f",
+        "android_client_info": {
+          "package_name": "com.template.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "502008612382-o12sj102qhlr5gp76ofgig3gqhnhk7hg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6EBTneTnmr7jz2DtC9Yb6zWbAoj-D_Hw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "502008612382-o12sj102qhlr5gp76ofgig3gqhnhk7hg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "502008612382-9hk7gf3vma9d0ombb4oa9mrqf21ruhlh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.zappenterprise.buckys"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:502008612382:android:703cd3641f1ee409",
+        "android_client_info": {
+          "package_name": "com.zappstudio.zappchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "502008612382-doo5q1i96pmlc679h4h7imu1cpd5h315.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zappstudio.zappchat",
+            "certificate_hash": "c938b98f5d962ba6cec6ee1a157a446ff78e0f54"
+          }
+        },
+        {
+          "client_id": "502008612382-o12sj102qhlr5gp76ofgig3gqhnhk7hg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6EBTneTnmr7jz2DtC9Yb6zWbAoj-D_Hw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "502008612382-o12sj102qhlr5gp76ofgig3gqhnhk7hg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "502008612382-9hk7gf3vma9d0ombb4oa9mrqf21ruhlh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.zappenterprise.buckys"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:502008612382:android:fc0c72c6c6efd734",
+        "android_client_info": {
+          "package_name": "com.zappstudio.zappchatandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "502008612382-svfmvuthjfj2t0jttpktvp8ikntbklp0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zappstudio.zappchatandroid",
+            "certificate_hash": "8548d057a08e5b5c4663a6d31c9f2330b1d23d42"
+          }
+        },
+        {
+          "client_id": "502008612382-o12sj102qhlr5gp76ofgig3gqhnhk7hg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6EBTneTnmr7jz2DtC9Yb6zWbAoj-D_Hw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "502008612382-o12sj102qhlr5gp76ofgig3gqhnhk7hg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "502008612382-9hk7gf3vma9d0ombb4oa9mrqf21ruhlh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.zappenterprise.buckys"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

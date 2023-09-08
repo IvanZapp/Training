@@ -1,0 +1,16 @@
+# Compile all configurations and uplaod to appcenter
+name: CI - Build-All-Flavors
+
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: [self-hosted, Linux]
+    container: registry.myapi.es/android-ci
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
+      - name: Building all configurations
+        run: fastlane generic id:all
+

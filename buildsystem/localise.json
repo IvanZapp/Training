@@ -1,0 +1,11 @@
+{
+  "locales" : [
+    "es",
+  ],
+  "directory" : "app/src/main/res",
+  "format": ".xml",
+  "platform" : "android",
+  "key" : "4SV2vBccvrxdRF5nGQfwY-hcmllEY-Lx",
+  "fallback" : "es",
+  "order": "created"
+}

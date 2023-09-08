@@ -1,0 +1,28 @@
+{
+  "flavors": [
+    {
+      "id": "develop",
+      "flavor_name": "develop",
+      "sign_conf": "release",
+      "appcenter_user" : "info-gdiv",
+      "appcenter_api_key" : "0dff2088ceae5fc84dfcde80c350e7f13b46ba92",
+      "appcenter_app_name": "android-template",
+      "appcenter_group": "develop",
+      "appcenter_url_release": "https://install.appcenter.ms/users/info-gdiv/apps/android-template/distribution_groups/develop",
+      "package_name": "com.template.app",
+      "module_name": "app"
+    },
+    {
+      "id": "production",
+      "flavor_name": "production",
+      "sign_conf": "release",
+      "appcenter_api_key" : "0dff2088ceae5fc84dfcde80c350e7f13b46ba92",
+      "appcenter_user" : "info-gdiv",
+      "appcenter_app_name": "android-template",
+      "appcenter_group": "production",
+      "appcenter_url_release": "https://install.appcenter.ms/users/info-gdiv/apps/android-template/distribution_groups/production",
+      "package_name": "com.template.app",
+      "module_name": "app"
+    }
+  ]
+}

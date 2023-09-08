@@ -1,0 +1,2 @@
+import-loco:
+	fastlane importLoco

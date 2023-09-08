@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!-- Form styles -->
+  <style name="AppTheme.Form.Title">
+    <item name="android:textColor">@color/color1</item>
+    <item name="android:textSize">18sp</item>
+    <item name="android:fontFamily">@font/semibold</item>
+  </style>
+
+  <style name="AppTheme.Form.Label">
+    <item name="android:textSize">15sp</item>
+    <item name="android:textColor">@color/color00</item>
+    <item name="android:fontFamily">@font/light</item>
+  </style>
+
+  <style name="AppTheme.Form.Subtitle">
+    <item name="android:textSize">13sp</item>
+    <item name="android:textColor">@color/color00</item>
+    <item name="android:fontFamily">@font/regular</item>
+  </style>
+
+  <style name="AppTheme.Form.EditText" parent="@style/Widget.AppCompat.EditText">
+    <item name="android:textSize">15sp</item>
+    <item name="android:background">@drawable/shape_radius_24</item>
+    <item name="android:backgroundTint">@color/color4</item>
+    <item name="backgroundTint">@color/color4</item>
+    <item name="android:fontFamily">@font/light</item>
+    <item name="android:textColor">@color/color00</item>
+    <item name="android:textColorHint">@color/color00_alpha50</item>
+    <item name="android:drawablePadding">15dp</item>
+    <item name="android:singleLine">true</item>
+    <item name="android:paddingTop">14dp</item>
+    <item name="android:paddingBottom">14dp</item>
+    <item name="android:paddingStart">25dp</item>
+    <item name="android:paddingEnd">25dp</item>
+  </style>
+
+  <style name="AppTheme.Form.EditText.Dropdown">
+    <item name="android:drawableEnd">@android:drawable/arrow_down_float</item>
+    <item name="android:focusable">false</item>
+    <item name="android:focusableInTouchMode">false</item>
+    <item name="android:cursorVisible">false</item>
+  </style>
+
+  <style name="AppTheme.Form.EditText.Multiline">
+    <item name="android:singleLine">false</item>
+    <item name="android:gravity">top</item>
+  </style>
+
+
+  <!-- Button styles -->
+  <style name="AppTheme.Button" parent="@style/Widget.MaterialComponents.Button">
+    <item name="android:paddingTop">13dp</item>
+    <item name="android:paddingBottom">13dp</item>
+    <item name="android:insetBottom">0dp</item>
+    <item name="android:insetTop">0dp</item>
+    <item name="android:textSize">17sp</item>
+    <item name="android:paddingStart">20dp</item>
+    <item name="android:paddingEnd">20dp</item>
+    <item name="textAllCaps">true</item>
+    <item name="android:maxLines">1</item>
+    <item name="android:ellipsize">end</item>
+    <item name="cornerRadius">50dp</item>
+    <item name="android:textColor">@color/color0</item>
+    <item name="fontFamily">@font/regular</item>
+    <item name="rippleColor">@color/color2</item>
+    <item name="backgroundTint">@color/color1</item>
+    <item name="android:letterSpacing">0</item>
+  </style>
+
+  <style name="AppTheme.Button.Border">
+    <item name="strokeColor">@color/color1</item>
+    <item name="rippleColor">@color/transparent</item>
+    <item name="strokeWidth">2dp</item>
+    <item name="android:textColor">@color/color1</item>
+    <item name="backgroundTint">@color/color0</item>
+  </style>
+
+  <style name="AppTheme.FloatingButton" parent="@style/Widget.MaterialComponents.FloatingActionButton">
+    <item name="tint">@color/color1</item>
+    <item name="backgroundTint">@color/color0</item>
+    <item name="srcCompat">@android:drawable/ic_input_add</item>
+  </style>
+
+
+  <!-- Other components -->
+  <style name="AppTheme.BottomNavigationView" parent="@style/Widget.MaterialComponents.BottomNavigationView">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">80dp</item>
+    <item name="android:elevation">8dp</item>
+    <item name="itemIconTint">@color/selector_color1_color2</item>
+    <item name="itemIconSize">28dp</item>
+    <item name="android:textColor">@color/selector_color1_color2</item>
+    <item name="labelVisibilityMode">labeled</item>
+    <item name="itemTextColor">@color/selector_color1_color2</item>
+    <item name="itemTextAppearanceInactive">@style/AppTheme.BottomNavTextInactive</item>
+    <item name="itemTextAppearanceActive">@style/AppTheme.BottomNavTextActive</item>
+    <item name="menu">@menu/main_menu</item>
+  </style>
+
+  <style name="AppTheme.BottomNavTextInactive">
+    <item name="android:text">10sp</item>
+    <item name="fontFamily">@font/regular</item>
+  </style>
+
+  <style name="AppTheme.BottomNavTextActive">
+    <item name="android:text">10sp</item>
+    <item name="fontFamily">@font/bold</item>
+  </style>
+
+  <!-- Dialogs -->
+  <style name="AppTheme.Dialog.Container">
+    <item name="android:background">@drawable/shape_radius_30</item>
+    <item name="android:paddingBottom">30dp</item>
+    <item name="android:backgroundTint">@color/color0</item>
+  </style>
+
+  <style name="AppTheme.Dialog.Title" parent="AppTheme.Form.Title">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textSize">20sp</item>
+    <item name="android:gravity">center</item>
+    <item name="android:paddingStart">20dp</item>
+    <item name="android:paddingEnd">20dp</item>
+    <item name="android:layout_marginTop">45dp</item>
+  </style>
+
+  <style name="AppTheme.Dialog.Text" parent="AppTheme.Form.Label">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textColor">@color/color00_alpha70</item>
+    <item name="android:textSize">13sp</item>
+    <item name="android:gravity">center</item>
+    <item name="android:paddingBottom">20dp</item>
+    <item name="android:layout_marginTop">19dp</item>
+    <item name="android:paddingStart">20dp</item>
+    <item name="android:paddingEnd">20dp</item>
+  </style>
+
+  <style name="AppTheme.Dialog.Icon">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+  </style>
+
+  <style name="AppTheme.Dialog.EditText" parent="AppTheme.Form.EditText">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+  </style>
+
+  <style name="AppTheme.Dialog.RecyclerView" />
+
+  <style name="AppTheme.Dialog.CloseButton">
+    <item name="android:visibility">visible</item>
+    <item name="android:layout_marginEnd">20dp</item>
+    <item name="android:layout_marginTop">20dp</item>
+    <item name="android:src">@android:drawable/ic_menu_close_clear_cancel</item>
+  </style>
+
+  <style name="AppTheme.Dialog.LinearLayoutButtons">
+    <item name="android:layout_marginTop">20dp</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:orientation">horizontal</item>
+    <item name="android:paddingStart">24dp</item>
+    <item name="android:paddingEnd">24dp</item>
+    <item name="android:paddingBottom">15dp</item>
+    <item name="android:gravity">center</item>
+    <item name="android:clipToPadding">false</item>
+  </style>
+
+  <style name="AppTheme.Dialog.Button.Positive" parent="AppTheme.Button">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textSize">13sp</item>
+    <item name="android:minWidth">132dp</item>
+    <item name="android:paddingStart">1dp</item>
+    <item name="android:paddingEnd">1dp</item>
+    <item name="android:layout_weight">1</item>
+  </style>
+
+  <style name="AppTheme.Dialog.Button.Negative" parent="AppTheme.Dialog.Button.Positive">
+    <item name="android:layout_marginEnd">20dp</item>
+    <item name="android:layout_weight">1</item>
+  </style>
+
+  <style name="AppTheme.Dialog.Item">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+  </style>
+
+  <!-- Action bar styles -->
+
+  <!-- Android Toolbar Style -->
+  <style name="AppTheme.ActionBar">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:fontFamily">@font/bold</item>
+    <item name="titleTextColor">@color/color00</item>
+    <item name="android:colorControlNormal">@color/color00</item>
+    <item name="android:colorControlActivated">@color/color00</item>
+    <item name="android:navigationIcon">@drawable/ic_back</item>
+    <item name="navigationIcon">@drawable/ic_back</item>
+    <item name="titleTextAppearance">@style/AppTheme.ActionBar.Title</item>
+    <item name="contentInsetStartWithNavigation">0dp</item>
+  </style>
+
+  <!-- Custom Toolbar styles -->
+  <style name="AppTheme.ActionBarTheme" />
+
+  <style name="AppTheme.ActionBar.Container">
+    <item name="android:paddingLeft">10dp</item>
+    <item name="android:paddingRight">10dp</item>
+    <item name="android:background">@color/color1</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">?android:actionBarSize</item>
+  </style>
+
+  <style name="AppTheme.ActionBar.Title">
+    <item name="android:paddingLeft">40dp</item>
+    <item name="android:paddingRight">40dp</item>
+    <item name="android:fontFamily">@font/bold</item>
+    <item name="android:textSize">23sp</item>
+    <item name="android:textColor">@color/color00</item>
+  </style>
+
+  <style name="AppTheme.ActionBar.Logo">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+  </style>
+
+  <style name="AppTheme.ActionBar.Button" />
+
+  <style name="AppTheme.ActionBar.Button.Back">
+    <item name="android:scaleType">centerInside</item>
+  </style>
+
+  <!-- Action Overflow style -->
+  <style name="ActionOverflowButtonStyle" parent="@style/Widget.AppCompat.ActionButton.Overflow">
+    <item name="tint">@color/color00</item>
+  </style>
+
+
+  <!-- Progress bar -->
+  <style name="AppTheme.Progressbar">
+    <item name="android:indeterminateTint">@color/color_loading</item>
+  </style>
+
+  <!-- Override styles -->
+  <style name="AppTheme.OnlyRecyclerview" />
+
+  <style name="AppTheme.OnlyFrameLayout" />
+
+  <!--Tab layout styles-->
+  <style name="AppTheme.TabLayout">
+    <item name="tabMode">fixed</item>
+    <item name="tabTextAppearance">@style/TextAppearance.Tab</item>
+    <item name="android:background">@color/transparent</item>
+    <item name="android:backgroundTint">@color/transparent</item>
+    <item name="tabIndicatorFullWidth">false</item>
+    <item name="android:layout_height">30dp</item>
+    <item name="tabRippleColor">@null</item>
+    <item name="tabTextColor">@color/color00_alpha50</item>
+    <item name="tabSelectedTextColor">@color/color00</item>
+  </style>
+
+  <style name="TextAppearance.Tab" parent="AppTheme.Button">
+    <item name="fontFamily">@font/bold</item>
+    <item name="android:fontFamily">@font/light</item>
+    <item name="android:textAllCaps">false</item>
+    <item name="android:textSize">13sp</item>
+  </style>
+
+
+
+  <!--Privacy policy screen-->
+  <style name="AppTheme.PrivacyPolicy.Button.Container" parent="ZappAppTheme">
+    <item name="android:padding">20dp</item>
+  </style>
+
+  <style name="AppTheme.PrivacyPolicy.Button" parent="AppTheme.Button">
+    <item name="android:text">@string/accept</item>
+    <item name="android:textColor">@color/color0</item>
+  </style>
+
+  <style name="AppTheme.PrivacyPolicy.Button.Negative" parent="ZappAppTheme.Button.Negative"/>
+
+  <style name="AppTheme.PrivacyPolicy.WebView" parent="ZappAppTheme.OnlyFrameLayout"/>
+
+</resources>

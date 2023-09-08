@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Loco xml export: Android string resources
+ Project: Template
+ Release: Working copy
+ Locale: es-ES, Spanish (Spain)
+ Exported by: Zapp  Studio
+ Exported at: Mon, 03 Apr 2023 12:45:01 +0200
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="test">test</string>
+    <string name="ok">ok</string>
+    <string name="english">English</string>
+    <string name="spanish">Spanish</string>
+    <string name="error">Error</string>
+    <string name="must_update_app">Existe una versión más reciente de la aplicación y es necesario actualizarla</string>
+    <string name="google_play_services_not_available">For this app, Google Play services are required.</string>
+    <string name="warning">Aviso</string>
+    <string name="privacy_policy_must_be_accepted">La política de privacidad ha cambiado, debe aceptar la nueva política de privacidad para continuar usando la aplicación.</string>
+    <string name="privacy_policy">Política de privacidad</string>
+</resources>
