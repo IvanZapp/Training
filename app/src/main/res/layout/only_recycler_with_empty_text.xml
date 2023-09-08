@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2022.
+  ~ All rights reserved to Zapp Studio S.L
+  ~ Av. de Zarandona, 29, 1 planta, 30007 Murcia
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="isEmpty"
+            type="androidx.lifecycle.LiveData&lt;Boolean>" />
+
+        <variable
+            name="icon"
+            type="android.graphics.drawable.Drawable" />
+
+        <variable
+            name="text"
+            type="String" />
+
+        <variable
+            name="paddingTop"
+            type="Float" />
+
+        <variable
+            name="paddingBottom"
+            type="Float" />
+        <variable
+            name="showGone"
+            type="Boolean" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="@{ !showGone }">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            style="@style/AppTheme.OnlyRecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:paddingTop="@{ paddingTop }"
+            android:paddingBottom="@{ paddingBottom }"
+            android:visibility="@{ !isEmpty }" />
+
+        <include
+            layout="@layout/layout_empty_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:icon="@{ icon }"
+            app:isEmpty="@{ isEmpty }"
+            app:text="@{ text }" />
+
+    </RelativeLayout>
+
+</layout>

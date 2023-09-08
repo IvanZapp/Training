@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="clickHandler"
+            type="com.template.app.app.ui.test.TestActivity.ClickHandler" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toTopOf="@id/bottom_nav_view"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/toolbar"
+                    style="@style/AppTheme.ActionBar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:menu="@menu/test_menu"
+                    app:title="Oportunidad" />
+
+
+                <EditText
+                    android:id="@+id/et_field_dropdown"
+                    style="@style/AppTheme.Form.EditText.Dropdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="32dp"
+                    android:text="Selecciona una opción"
+                    app:layout_constraintTop_toBottomOf="@id/et_field_hint" />
+
+                <EditText
+                    android:id="@+id/et_field_hint"
+                    style="@style/AppTheme.Form.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="32dp"
+                    android:hint="write.."
+                    app:layout_constraintTop_toBottomOf="@id/tv_subtitle" />
+
+
+                <EditText
+                    android:id="@+id/et_field_multiline"
+                    style="@style/AppTheme.Form.EditText.Multiline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="32dp"
+                    android:minLines="5"
+                    android:text="Texto multiline"
+                    app:layout_constraintTop_toBottomOf="@id/et_field_dropdown" />
+
+
+                <TextView
+                    android:id="@+id/tv_label"
+                    style="@style/AppTheme.Form.Label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="32dp"
+                    android:text="Esto es una prueba de label de la app con varias líneas"
+                    app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    style="@style/AppTheme.Form.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:text="Esto es una prueba de título"
+                    app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+
+                <TextView
+                    android:id="@+id/tv_subtitle"
+                    style="@style/AppTheme.Form.Subtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="32dp"
+                    android:text="Esto es una prueba de subtítulo de la app con varias líneas"
+                    app:layout_constraintTop_toBottomOf="@id/tv_label" />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_border"
+                    style="@style/AppTheme.Button.Border"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="32dp"
+                    android:onClick="@{() -> clickHandler.onSecondButtonClick()}"
+                    android:text="open list"
+                    app:layout_constraintTop_toBottomOf="@id/btn" />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn"
+                    style="@style/AppTheme.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="32dp"
+                    android:onClick="@{() -> clickHandler.onFirstButtonClick()}"
+                    android:text="Open popup"
+                    app:layout_constraintTop_toBottomOf="@id/et_field_multiline" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    style="@style/AppTheme.FloatingButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_nav_view"
+            style="@style/AppTheme.BottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:itemIconSize="28.3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:menu="@menu/test_menu" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

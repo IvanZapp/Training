@@ -1,0 +1,25 @@
+# Compile flavor provided and upload to appcenter.
+name: CI - Build-Flavor
+
+on:
+  workflow_dispatch:
+    inputs:
+      flavorId:
+        type: choice
+        description: Seleccione flavorº
+        required: true
+        options:
+          - develop
+          - pre
+          - production
+jobs:
+  build:
+    runs-on: [self-hosted, Linux]
+    container: registry.myapi.es/android-ci
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: 'true'
+      - name: Build develop production
+        run: fastlane generic id:${{ github.event.inputs.flavorId }}
+
