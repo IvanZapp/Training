@@ -12,7 +12,7 @@ class App : ZappBaseGmsApplication() {
     @SuppressLint("MissingSuperCall")
     override fun onCreate() {
         super.onCreate()
-        Timber.plant(if (com.template.app.BuildConfig.DEBUG) Timber.DebugTree() else getTimberTree())
+        Timber.plant(if (com.training.app.BuildConfig.DEBUG) Timber.DebugTree() else getTimberTree())
     }
 
     private fun getTimberTree(): Timber.Tree =

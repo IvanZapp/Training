@@ -1,2 +1,2 @@
-rootProject.name = "ZappTemplate"
+rootProject.name = "Training"
 include ':app'

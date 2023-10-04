@@ -16,7 +16,7 @@ class LoginViewModel(
     val user = MutableLiveData<UserModel>()
 
     init {
-        if (com.template.app.BuildConfig.DEBUG) {
+        if (com.training.app.BuildConfig.DEBUG) {
             email.value = "active@zapp-studio.com"
             password.value = "holahola"
         }

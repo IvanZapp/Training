@@ -8,7 +8,7 @@ object BuildConstants {
         const val targetSdkVersion = 33
         const val compileSdk = 33
         const val minSdk = 25
-        const val applicationId = "com.template.app"
+        const val applicationId = "com.training.app"
         const val versionName = "0.0.1"
         const val versionCode = 1
         const val jvmTarget = "17"
