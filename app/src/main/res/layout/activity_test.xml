@@ -7,7 +7,7 @@
 
         <variable
             name="clickHandler"
-            type="com.template.app.app.ui.test.TestActivity.ClickHandler" />
+            type="com.training.app.app.ui.test.TestActivity.ClickHandler" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

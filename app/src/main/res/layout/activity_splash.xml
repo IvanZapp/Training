@@ -4,7 +4,7 @@
 
     <data>
 
-        <import type="com.template.app.BuildConfig" />
+        <import type="com.training.app.BuildConfig" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

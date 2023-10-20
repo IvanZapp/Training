@@ -87,7 +87,7 @@ create("release") {
     productFlavors {
         create("develop") {
             applicationIdSuffix = ".dev"
-            buildConfigField("String", "BASE_PATH", "\"https://neting-api-dev.zapp.dev/\"")
+            buildConfigField("String", "BASE_PATH", "\"https://rickandmortyapi.com/api\"")
         }
         create("pre") {
             applicationIdSuffix = ".pre"

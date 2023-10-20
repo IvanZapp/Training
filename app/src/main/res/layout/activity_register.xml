@@ -7,11 +7,11 @@
 
     <variable
         name="viewModel"
-        type="com.template.app.app.ui.register.RegisterViewModel" />
+        type="com.training.app.app.ui.register.RegisterViewModel" />
 
     <variable
         name="handler"
-        type="com.template.app.app.ui.register.RegisterActivity.Handler" />
+        type="com.training.app.app.ui.register.RegisterActivity.Handler" />
 
   </data>
 

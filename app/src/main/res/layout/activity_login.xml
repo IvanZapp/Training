@@ -5,14 +5,14 @@
 
 
     <data>
-        <import type="com.template.app.R" />
+        <import type="com.training.app.R" />
         <variable
             name="viewModel"
-            type="com.template.app.app.ui.login.LoginViewModel" />
+            type="com.training.app.app.ui.login.LoginViewModel" />
 
         <variable
             name="handler"
-            type="com.template.app.app.ui.login.LoginActivity.Handler" />
+            type="com.training.app.app.ui.login.LoginActivity.Handler" />
     </data>
 
     <ScrollView
